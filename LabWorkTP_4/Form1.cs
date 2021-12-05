@@ -64,9 +64,17 @@ namespace LabWorkTP_4
             richTextBox.Font = new Font(richTextBox.SelectionFont.FontFamily, i);
         }
 
-        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void ExitToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void NewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditForm editForm = new EditForm(this);
+            editForm.MdiParent = this;
+            editForm.Show();
         }
     }
 }
