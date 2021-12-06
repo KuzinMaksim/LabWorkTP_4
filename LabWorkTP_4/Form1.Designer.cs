@@ -43,6 +43,7 @@ namespace LabWorkTP_4
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.ConfirmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox = new System.Windows.Forms.RichTextBox();
+            this.NewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +64,7 @@ namespace LabWorkTP_4
             this.saveToolStripMenuItem,
             this.openToolStripMenuItem,
             this.EditToolStripMenuItem,
+            this.NewToolStripMenuItem,
             this.ExitToolStripMenuItem});
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
             this.ToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
@@ -151,12 +153,19 @@ namespace LabWorkTP_4
             this.richTextBox.TabIndex = 1;
             this.richTextBox.Text = "";
             // 
+            // NewToolStripMenuItem
+            // 
+            this.NewToolStripMenuItem.Name = "NewToolStripMenuItem";
+            this.NewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.NewToolStripMenuItem.Text = "Изменить";
+            this.NewToolStripMenuItem.Click += new System.EventHandler(this.NewToolStripMenuItem_Click);
+            // 
             // ExitToolStripMenuItem
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
             this.ExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ExitToolStripMenuItem.Text = "Выход";
-            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -166,6 +175,7 @@ namespace LabWorkTP_4
             this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Text Editor";
@@ -191,6 +201,7 @@ namespace LabWorkTP_4
         private System.Windows.Forms.ToolStripMenuItem SizeToolStripMenuItem;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
         private System.Windows.Forms.ToolStripMenuItem ConfirmToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem NewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
     }
 }
