@@ -42,9 +42,9 @@ namespace LabWorkTP_4
             this.SizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.ConfirmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.NewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,14 +73,14 @@ namespace LabWorkTP_4
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.saveToolStripMenuItem.Text = "Сохранить";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.openToolStripMenuItem.Text = "Открыть";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -90,7 +90,7 @@ namespace LabWorkTP_4
             this.AligmentToolStripMenuItem,
             this.SizeToolStripMenuItem});
             this.EditToolStripMenuItem.Name = "EditToolStripMenuItem";
-            this.EditToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.EditToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.EditToolStripMenuItem.Text = "Верстка";
             // 
             // AligmentToolStripMenuItem
@@ -100,7 +100,7 @@ namespace LabWorkTP_4
             this.RightToolStripMenuItem,
             this.CenterToolStripMenuItem});
             this.AligmentToolStripMenuItem.Name = "AligmentToolStripMenuItem";
-            this.AligmentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AligmentToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.AligmentToolStripMenuItem.Text = "Выравнивание";
             // 
             // LeftToolStripMenuItem
@@ -130,7 +130,7 @@ namespace LabWorkTP_4
             this.toolStripComboBox1,
             this.ConfirmToolStripMenuItem});
             this.SizeToolStripMenuItem.Name = "SizeToolStripMenuItem";
-            this.SizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SizeToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.SizeToolStripMenuItem.Text = "Размер шрифта";
             // 
             // toolStripComboBox1
@@ -145,6 +145,20 @@ namespace LabWorkTP_4
             this.ConfirmToolStripMenuItem.Text = "Применить";
             this.ConfirmToolStripMenuItem.Click += new System.EventHandler(this.ConfirmToolStripMenuItem_Click);
             // 
+            // NewToolStripMenuItem
+            // 
+            this.NewToolStripMenuItem.Name = "NewToolStripMenuItem";
+            this.NewToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.NewToolStripMenuItem.Text = "Изменить";
+            this.NewToolStripMenuItem.Click += new System.EventHandler(this.NewToolStripMenuItem_Click);
+            // 
+            // ExitToolStripMenuItem
+            // 
+            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.ExitToolStripMenuItem.Text = "Выход";
+            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click_1);
+            // 
             // richTextBox
             // 
             this.richTextBox.Location = new System.Drawing.Point(12, 37);
@@ -152,20 +166,7 @@ namespace LabWorkTP_4
             this.richTextBox.Size = new System.Drawing.Size(776, 401);
             this.richTextBox.TabIndex = 1;
             this.richTextBox.Text = "";
-            // 
-            // NewToolStripMenuItem
-            // 
-            this.NewToolStripMenuItem.Name = "NewToolStripMenuItem";
-            this.NewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.NewToolStripMenuItem.Text = "Изменить";
-            this.NewToolStripMenuItem.Click += new System.EventHandler(this.NewToolStripMenuItem_Click);
-            // 
-            // ExitToolStripMenuItem
-            // 
-            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ExitToolStripMenuItem.Text = "Выход";
-            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click_1);
+            this.richTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.richTextBox_KeyDown);
             // 
             // Form1
             // 

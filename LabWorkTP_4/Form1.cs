@@ -76,5 +76,21 @@ namespace LabWorkTP_4
             editForm.MdiParent = this;
             editForm.Show();
         }
+
+        private void richTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == (Keys.Control | Keys.S))
+            {
+                saveToolStripMenuItem_Click(sender, e);
+            }
+            if (e.KeyData == (Keys.Control | Keys.O))
+            {
+                openToolStripMenuItem_Click(sender, e);
+            }
+            if (e.KeyData == (Keys.Control | Keys.Q))
+            {
+                Application.Exit();
+            }
+        }
     }
 }
